@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class gormDc.LicensorIntSpec</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class gormDc.LicensorIntSpec</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/gormDc.html">gormDc</a> &gt; LicensorIntSpec</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">3</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">14.179s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">25%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Reference search using inner join onto self works"></a>
+<h3 class="failures">Reference search using inner join onto self works</h3>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at org.grails.orm.hibernate.query.AbstractHibernateQuery.doTypeConversionIfNeccessary(AbstractHibernateQuery.java:251)
+	at org.grails.orm.hibernate.query.AbstractHibernateCriterionAdapter.applySubCriteriaToJunction(AbstractHibernateCriterionAdapter.java:510)
+	at org.grails.orm.hibernate.query.AbstractHibernateCriterionAdapter$15.toHibernateCriterion(AbstractHibernateCriterionAdapter.java:219)
+	at org.grails.orm.hibernate.query.AbstractHibernateCriterionAdapter$15.toHibernateCriterion(AbstractHibernateCriterionAdapter.java:215)
+	at org.grails.orm.hibernate.query.AbstractHibernateCriterionAdapter.toHibernateCriterion(AbstractHibernateCriterionAdapter.java:531)
+	at grails.orm.HibernateCriteriaBuilder.populateHibernateDetachedCriteria(HibernateCriteriaBuilder.java:222)
+	at grails.orm.HibernateCriteriaBuilder.getHibernateDetachedCriteria(HibernateCriteriaBuilder.java:215)
+	at org.grails.orm.hibernate.query.HibernateQuery.setDetachedCriteriaValue(HibernateQuery.java:77)
+	at org.grails.orm.hibernate.query.AbstractHibernateQuery.add(AbstractHibernateQuery.java:160)
+	at org.grails.datastore.gorm.finders.DynamicFinder.applyDetachedCriteria(DynamicFinder.java:545)
+	at grails.gorm.DetachedCriteria.withPopulatedQuery_closure10(DetachedCriteria.groovy:1235)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.grails.datastore.gorm.GormStaticApi.withDatastoreSession_closure23(GormStaticApi.groovy:726)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at org.grails.datastore.mapping.core.DatastoreUtils.execute(DatastoreUtils.java:310)
+	at org.grails.datastore.gorm.AbstractDatastoreApi.execute(AbstractDatastoreApi.groovy:37)
+	at org.grails.datastore.gorm.GormStaticApi.withDatastoreSession(GormStaticApi.groovy:725)
+	at org.grails.datastore.gorm.GormEntity$Trait$Helper.withDatastoreSession(GormEntity.groovy:884)
+	at grails.gorm.DetachedCriteria.withPopulatedQuery(DetachedCriteria.groovy:1219)
+	at grails.gorm.DetachedCriteria.list(DetachedCriteria.groovy:872)
+	at gormDc.LicensorIntSpec.$tt__$spock_feature_0_0(LicensorIntSpec.groovy:31)
+	at gormDc.LicensorIntSpec.Reference search using inner join onto self works_closure1(LicensorIntSpec.groovy)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at grails.transaction.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:70)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at grails.transaction.GrailsTransactionTemplate.executeAndRollback(GrailsTransactionTemplate.groovy:67)
+	at gormDc.LicensorIntSpec.Reference search using inner join onto self works(LicensorIntSpec.groovy)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Test Lookup for Licensor using OR with direct data"></a>
+<h3 class="failures">Test Lookup for Licensor using OR with direct data</h3>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at org.grails.orm.hibernate.query.AbstractHibernateQuery.doTypeConversionIfNeccessary(AbstractHibernateQuery.java:251)
+	at org.grails.orm.hibernate.query.AbstractHibernateCriterionAdapter.applySubCriteriaToJunction(AbstractHibernateCriterionAdapter.java:510)
+	at org.grails.orm.hibernate.query.AbstractHibernateCriterionAdapter$15.toHibernateCriterion(AbstractHibernateCriterionAdapter.java:219)
+	at org.grails.orm.hibernate.query.AbstractHibernateCriterionAdapter$15.toHibernateCriterion(AbstractHibernateCriterionAdapter.java:215)
+	at org.grails.orm.hibernate.query.AbstractHibernateCriterionAdapter.toHibernateCriterion(AbstractHibernateCriterionAdapter.java:531)
+	at grails.orm.HibernateCriteriaBuilder.populateHibernateDetachedCriteria(HibernateCriteriaBuilder.java:222)
+	at grails.orm.HibernateCriteriaBuilder.getHibernateDetachedCriteria(HibernateCriteriaBuilder.java:215)
+	at org.grails.orm.hibernate.query.HibernateQuery.setDetachedCriteriaValue(HibernateQuery.java:77)
+	at org.grails.orm.hibernate.query.AbstractHibernateQuery.add(AbstractHibernateQuery.java:160)
+	at org.grails.datastore.gorm.finders.DynamicFinder.applyDetachedCriteria(DynamicFinder.java:545)
+	at grails.gorm.DetachedCriteria.withPopulatedQuery_closure10(DetachedCriteria.groovy:1235)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.grails.datastore.gorm.GormStaticApi.withDatastoreSession_closure23(GormStaticApi.groovy:726)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at org.grails.datastore.mapping.core.DatastoreUtils.execute(DatastoreUtils.java:310)
+	at org.grails.datastore.gorm.AbstractDatastoreApi.execute(AbstractDatastoreApi.groovy:37)
+	at org.grails.datastore.gorm.GormStaticApi.withDatastoreSession(GormStaticApi.groovy:725)
+	at org.grails.datastore.gorm.GormEntity$Trait$Helper.withDatastoreSession(GormEntity.groovy:884)
+	at grails.gorm.DetachedCriteria.withPopulatedQuery(DetachedCriteria.groovy:1219)
+	at grails.gorm.DetachedCriteria.list(DetachedCriteria.groovy:872)
+	at gormDc.LicensorIntSpec.$tt__$spock_feature_0_2(LicensorIntSpec.groovy:77)
+	at gormDc.LicensorIntSpec.Test Lookup for Licensor using OR with direct data_closure3(LicensorIntSpec.groovy)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at grails.transaction.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:70)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at grails.transaction.GrailsTransactionTemplate.executeAndRollback(GrailsTransactionTemplate.groovy:67)
+	at gormDc.LicensorIntSpec.Test Lookup for Licensor using OR with direct data(LicensorIntSpec.groovy)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Test Lookup for Licensor using where with direct data"></a>
+<h3 class="failures">Test Lookup for Licensor using where with direct data</h3>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at org.grails.orm.hibernate.query.AbstractHibernateQuery.doTypeConversionIfNeccessary(AbstractHibernateQuery.java:251)
+	at org.grails.orm.hibernate.query.AbstractHibernateCriterionAdapter.applySubCriteriaToJunction(AbstractHibernateCriterionAdapter.java:510)
+	at org.grails.orm.hibernate.query.AbstractHibernateCriterionAdapter$15.toHibernateCriterion(AbstractHibernateCriterionAdapter.java:219)
+	at org.grails.orm.hibernate.query.AbstractHibernateCriterionAdapter$15.toHibernateCriterion(AbstractHibernateCriterionAdapter.java:215)
+	at org.grails.orm.hibernate.query.AbstractHibernateCriterionAdapter.toHibernateCriterion(AbstractHibernateCriterionAdapter.java:531)
+	at grails.orm.HibernateCriteriaBuilder.populateHibernateDetachedCriteria(HibernateCriteriaBuilder.java:222)
+	at grails.orm.HibernateCriteriaBuilder.getHibernateDetachedCriteria(HibernateCriteriaBuilder.java:215)
+	at org.grails.orm.hibernate.query.HibernateQuery.setDetachedCriteriaValue(HibernateQuery.java:77)
+	at org.grails.orm.hibernate.query.AbstractHibernateQuery.add(AbstractHibernateQuery.java:160)
+	at org.grails.datastore.gorm.finders.DynamicFinder.applyDetachedCriteria(DynamicFinder.java:545)
+	at grails.gorm.DetachedCriteria.withPopulatedQuery_closure10(DetachedCriteria.groovy:1235)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.grails.datastore.gorm.GormStaticApi.withDatastoreSession_closure23(GormStaticApi.groovy:726)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at org.grails.datastore.mapping.core.DatastoreUtils.execute(DatastoreUtils.java:310)
+	at org.grails.datastore.gorm.AbstractDatastoreApi.execute(AbstractDatastoreApi.groovy:37)
+	at org.grails.datastore.gorm.GormStaticApi.withDatastoreSession(GormStaticApi.groovy:725)
+	at org.grails.datastore.gorm.GormEntity$Trait$Helper.withDatastoreSession(GormEntity.groovy:884)
+	at grails.gorm.DetachedCriteria.withPopulatedQuery(DetachedCriteria.groovy:1219)
+	at grails.gorm.DetachedCriteria.list(DetachedCriteria.groovy:872)
+	at gormDc.LicensorIntSpec.$tt__$spock_feature_0_3(LicensorIntSpec.groovy:98)
+	at gormDc.LicensorIntSpec.Test Lookup for Licensor using where with direct data_closure4(LicensorIntSpec.groovy)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at grails.transaction.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:70)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at grails.transaction.GrailsTransactionTemplate.executeAndRollback(GrailsTransactionTemplate.groovy:67)
+	at gormDc.LicensorIntSpec.Test Lookup for Licensor using where with direct data(LicensorIntSpec.groovy)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">Reference search using inner join onto self works</td>
+<td>4.103s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">Test Lookup for Licensor By group</td>
+<td>3.805s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Test Lookup for Licensor using OR with direct data</td>
+<td>3.082s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Test Lookup for Licensor using where with direct data</td>
+<td>3.189s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.9</a> at Feb 18, 2016 9:59:12 AM</p>
+</div>
+</div>
+</body>
+</html>

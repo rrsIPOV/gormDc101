@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gormDc.LicensorHibernateIntSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-02-18T14:58:35" hostname="AHC14-LT-56" time="22.46">
+  <properties/>
+  <testcase name="querying directly using hibernate works" classname="gormDc.LicensorHibernateIntSpec" time="22.46"/>
+  <system-out><![CDATA[Grails application running at http://localhost:9080 in environment: test
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
