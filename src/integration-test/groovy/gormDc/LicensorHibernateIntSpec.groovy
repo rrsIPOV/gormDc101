@@ -23,9 +23,7 @@ class LicensorHibernateIntSpec extends Specification {
 
     void "querying directly using hibernate works"() {
         given:
-        
-        LicensorIntSpec other = new LicensorIntSpec();
-        other.setupData();
+        (new LicensorIntSpec()).setupData()
 
         DetachedCriteria dc = DetachedCriteria.forClass(LicenseEntitlement, '_ent');
         dc.add(Restrictions.eq('assetId', 2));
